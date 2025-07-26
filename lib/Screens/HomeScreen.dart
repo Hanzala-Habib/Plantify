@@ -89,9 +89,35 @@ class Homescreen extends StatelessWidget {
                       ],
                     ),
                   ),
-                )
+                ),
               ],
             ),
+            Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: Row(
+                children: [
+                  Text("Recommended", style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 24
+                  ),),
+                  Spacer(),
+                  Container(
+                    height: 30,
+                    width: 70,
+                    decoration: BoxDecoration(
+                        color: mainColor,
+                      borderRadius: BorderRadius.circular(20)
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 15.0,top: 4),
+                      child: Text("more", style: TextStyle(
+                        color: Colors.white
+                      ),),
+                    ),
+                  )
+                ],
+              ),
+            )
           ],
         ),
       ),
